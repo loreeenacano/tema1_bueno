@@ -28,7 +28,7 @@ public class ejercicio4 {
 
         //guarda en un array del tamaño necesario
         int [] array2 = new  int[i-1];
-        for(j=0; j<=(i-1); j++)
+        for(j=0; j<(i-1); j++)
         {
             array2[j]=array1 [i];
         }
@@ -42,10 +42,7 @@ public class ejercicio4 {
 
         for (i=0; i<numeros.length; i++)
         {
-        if(numeros[i]<min)
-        {
-         min= numeros[i];
-        }
+        if(numeros[i]<min) min= numeros[i];
         }
         return min;
     }
@@ -54,11 +51,9 @@ public class ejercicio4 {
         int max =numeros[0];
         int i;
 
-        for (i=0; i<numeros.length; i++){
-        if(numeros[i]>max)
+        for (i=0; i<numeros.length; i++)
         {
-             max= numeros[i];
-        }
+        if(numeros[i]>max) max= numeros[i];
         }
         return max;
         }
@@ -66,6 +61,7 @@ public class ejercicio4 {
     public static void main (String[] args)
     {
         int []numeros = array_numeros(); 
+        System.out.println(numeros);
         System.out.println("El mayor numero es:" + max(numeros) + " y el menor es:" + min(numeros));
     }
     
