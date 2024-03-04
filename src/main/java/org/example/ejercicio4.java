@@ -39,7 +39,6 @@ public class ejercicio4 {
     {
         int min =numeros[0];
         int i;
-        int j;
 
         for (i=0; i<numeros.length; i++)
         {
@@ -54,7 +53,6 @@ public class ejercicio4 {
     public static int max( int[]numeros){
         int max =numeros[0];
         int i;
-        int j;
 
         for (i=0; i<numeros.length; i++){
         if(numeros[i]>max)
