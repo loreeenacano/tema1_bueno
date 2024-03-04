@@ -1,5 +1,6 @@
 package org.example;
-import InputOutput.Input;
+
+import org.example.InputOutput.Input;
 
 public class ejercicio6
 {
