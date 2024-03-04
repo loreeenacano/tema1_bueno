@@ -37,6 +37,6 @@ public class ejercicio6
     {
         System.out.print("Indique la cantidad de numeros primos que quiere recibir:");
          int n= Input.leerInt();
-         int[] numeros= array_primos(n); 
+         int[] numeros = array_primos(n); 
     }
 }
