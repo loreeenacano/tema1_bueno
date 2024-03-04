@@ -61,7 +61,6 @@ public class ejercicio4 {
     public static void main (String[] args)
     {
         int []numeros = array_numeros(); 
-        System.out.println(numeros);
         System.out.println("El mayor numero es:" + max(numeros) + " y el menor es:" + min(numeros));
     }
     
