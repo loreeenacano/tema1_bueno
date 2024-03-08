@@ -8,28 +8,28 @@ primos. Posteriormente imprima el array en el main. ; por ejemplo 40 = 2 * 2
 public class ejercicio7 {
     public static void main(String[] args) 
     {
-      int numero = pedirnum();
-      int [] array = array_primos(numero);
-      System.out.println("Numero factorizado:" + array);
-    }
+        System.out.println("Introduzca un numero:");
+        int num = Input.leerInt();
 
-    public static pedirnum ()
-        {
-            System.out.println("Introduzca un numero:");
-            int num = Input.leerInt();
-            System.out.println(" "+ num);
-            return num;
-        }
+        int [] array = array_primos(num);
+        System.out.print(num+ " = ");
+        for (int i=0; i < array.length; i++){
+        System.out.print(array[i]+"*"); }
+    }
 
         public static int [] array_primos(int num)
         {
-            num = pedirnum();
-            for(int i=2; i<=num;i ++)
+            int[] array = new int [10];
+            int indice=0;
+
+            for(int factor=2; factor<=num; factor ++)
             {
-                while (num % i==0)
+                if (num % factor==0)
                 {
-                    int array = new int [i];
-                    num =num/i;
+                    array [indice]= factor;
+                    num =num/factor;
+                    indice ++;
+                    factor --;
                 } 
             }
             return array;
