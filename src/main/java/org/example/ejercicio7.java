@@ -20,7 +20,7 @@ public class ejercicio7 {
         public static int [] array_primos(int num)
         {
             int[] array = new int [10];
-            int indice=0;
+            int indice=0; //es la posicion en el array
 
             for(int factor=2; factor<=num; factor ++)
             {
